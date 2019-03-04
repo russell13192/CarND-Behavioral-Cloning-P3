@@ -46,22 +46,22 @@ The model.py file contains the code for training and saving the convolution neur
 
 #### 1. An appropriate model architecture has been employed
 
-I elected to implement the Convolutional Neural Network as described in Nvidia's "End To End Learning For Self-Driving Cars" research paper (https://arxiv.org/pdf/1604.07316.pdf). I feed the network in an input shape of (160,320,3) and the entire network architecture is a 9 layer network that consists of 9 layers with 5 Convolutional Layers and 3 Fully Connected Layers.
+I elected to implement the Convolutional Neural Network as described in Nvidia's "End To End Learning For Self-Driving Cars" research paper [here](https://arxiv.org/pdf/1604.07316.pdf). I feed the network in an input shape of (160,320,3) and the entire network architecture is a 9 layer network that consists of 9 layers with 5 Convolutional Layers and 3 Fully Connected Layers.
 
 #### 2. Attempts to reduce overfitting in the model
 
 I initially had a dropout of 0.5 in my model, but after some experimentation I elected to not implement dropout as I found the results of eliminating dropout to be more stable.
 
-The model was trained and validated on different data sets to ensure that the model was not overfitting (code line 10-16). The model was tested by running it through the simulator and ensuring that the vehicle could stay on the track.
+The model was trained and validated on different data sets to ensure that the model was not overfitting. The model was tested by running it through the simulator and ensuring that the vehicle could stay on the track.
 
 #### 3. Model parameter tuning
 
-Number of Epochs=10
-Optimizer Used = Adam
+
+* I used an Adam optimizer with a default learning rate
 
 #### 4. Appropriate training data
 
-Training data was chosen to keep the vehicle driving on the road. I used a combination of center lane driving, recovering from the left and right sides of the road ... 
+Training data was chosen to keep the vehicle driving on the road. I used a combination of center lane driving, recovering from the left and right sides of the road to train the model in recovery behavior.
 
 For details about how I created the training data, see the next section. 
 
@@ -69,7 +69,7 @@ For details about how I created the training data, see the next section.
 
 #### 1. Solution Design Approach
 
-The overall strategy for deriving a model architecture was to ...
+The overall strategy for deriving a model architecture was to 
 
 My first step was to use a convolution neural network model similar to the ... I thought this model might be appropriate because ...
 
@@ -93,7 +93,7 @@ Here is a visualization of the architecture
 
 #### 3. Creation of the Training Set & Training Process
 
-In capturing training data I tried to maintain the vehicle in the center of the lane as much as possible.
+In capturing training data I tried to maintain the vehicle in the center of the lane as much as possible. In addition I also captured recovery data, in moving the vehicle from both the far right and far left to the center of the lane.
 
 After the collection process, I had X number of data points. I then preprocessed this data by ...
 
