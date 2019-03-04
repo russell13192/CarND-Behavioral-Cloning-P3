@@ -46,7 +46,7 @@ The model.py file contains the code for training and saving the convolution neur
 
 #### 1. An appropriate model architecture has been employed
 
-I elected to implement the Convolutional Neural Network as described in Nvidia's "End To End Learning For Self-Driving Cars" research paper (https://arxiv.org/pdf/1604.07316.pdf). I feed the network in an input shape of (160,320,3)
+I elected to implement the Convolutional Neural Network as described in Nvidia's "End To End Learning For Self-Driving Cars" research paper (https://arxiv.org/pdf/1604.07316.pdf). I feed the network in an input shape of (160,320,3) and the entire network architecture is a 9 layer network that consists of 9 layers with 5 Convolutional Layers and 3 Fully Connected Layers.
 
 #### 2. Attempts to reduce overfitting in the model
 
