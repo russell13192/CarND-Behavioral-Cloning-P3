@@ -93,7 +93,7 @@ Here is a visualization of the architecture
 
 #### 3. Creation of the Training Set & Training Process
 
-In capturing training data I tried to maintain the vehicle in the center of the lane as much as possible. In addition I also captured recovery data, in moving the vehicle from both the far right and far left to the center of the lane.
+In capturing training data I tried to maintain the vehicle in the center of the lane as much as possible. In addition I also captured recovery data, in moving the vehicle from both the far right and far left to the center of the lane. This proved to be critical as there was an area of the track that confused the network and caused it to veer off on several occassions. 
 
 After the collection process, I had X number of data points. I then preprocessed this data by ...
 
