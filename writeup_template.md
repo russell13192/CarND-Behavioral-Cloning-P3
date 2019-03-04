@@ -42,7 +42,7 @@ Using the Udacity provided simulator and my drive.py file, the car can be driven
 ```sh
 python drive.py model.h5
 ```
-[image8]
+![alt text][image8]
 
 #### 3. Submission code is usable and readable
 
