@@ -16,7 +16,9 @@ The goals / steps of this project are the following:
 
 
 [image1]: images/network_architecture.png "Network Architecture"
-
+[image2]: images/left.jpg "Left Camera"
+[image3]: images/center.jpg "Center Camera"
+[image4]: images/right.jpg "Right Camera"
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/432/view) individually and describe how I addressed each point in my implementation.  
 
@@ -79,7 +81,7 @@ To combat the overfitting, I modified the model so that ...
 
 Then I ... 
 
-The final step was to run the simulator to see how well the car was driving around track one. There were a few spots where the vehicle fell off the track... to improve the driving behavior in these cases, I ....
+After training the model for ten epochs, I ran the model using the provided drive.py script, with a sligh modification of setting the Max Speed to 25 (as opposed to the default of 9) to try and see the overall stability of my model and its ability to react to real-time conditions.
 
 At the end of the process, the vehicle is able to drive autonomously around the track without leaving the road.
 
@@ -94,6 +96,8 @@ Here is a visualization of the architecture
 #### 3. Creation of the Training Set & Training Process
 
 In capturing training data I tried to maintain the vehicle in the center of the lane as much as possible. In addition I also captured recovery data, in moving the vehicle from both the far right and far left to the center of the lane. This proved to be critical as there was an area of the track that confused the network and caused it to veer off on several occassions. 
+
+![alt text][image2] ![alt text][image3]![alt text][image4]
 
 After the collection process, I had X number of data points. I then preprocessed this data by ...
 
