@@ -42,7 +42,7 @@ Using the Udacity provided simulator and my drive.py file, the car can be driven
 ```sh
 python drive.py model.h5
 ```
-![alt text][image8]
+
 
 #### 3. Submission code is usable and readable
 
@@ -96,7 +96,7 @@ The final model architecture (model.py lines 18-24) consisted of a convolution n
 
 Here is a visualization of the architecture (note: visualizing the architecture is optional according to the project rubric)
 
-![alt text][image1]
+![alt text][image8]
 
 #### 3. Creation of the Training Set & Training Process
 
